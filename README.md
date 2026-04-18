@@ -1,3 +1,5 @@
+# Phase 1: Presented offline
+# Phase 2: https://drive.google.com/drive/folders/1u8MRyDlJSZc6OxUCAsA4VeoFly6AsFu4
 # Seamless-Detection
 
 Unified SOD/COD segmentation framework with contrastive distillation.
