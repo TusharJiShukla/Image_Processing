@@ -1,4 +1,4 @@
-# Phase 1: Presented offline
+# Phase 1: Presented offline (SeNET -  SOD and COD)
 # Phase 2: https://drive.google.com/drive/folders/1u8MRyDlJSZc6OxUCAsA4VeoFly6AsFu4
 # Seamless-Detection
 
