@@ -1,102 +1,50 @@
-# Phase 1: Presented offline (SeNET -  SOD and COD)
-# Phase 2: https://drive.google.com/drive/folders/1u8MRyDlJSZc6OxUCAsA4VeoFly6AsFu4
-# Seamless-Detection
+﻿<div align="center">
+  <h1 align="center">Image Processing</h1>
+  <h3>Developed by Tushar Shukla</h3>
+</div>
 
-Unified SOD/COD segmentation framework with contrastive distillation.
+<br/>
 
-## Highlights
+## 🚀 Overview
 
-- Unified learning for Salient Object Detection (SOD) and Camouflaged Object Detection (COD).
-- Shared encoder-decoder training with contrastive foreground/background semantics.
-- Supports training, testing, CRF post-processing, and metric evaluation.
+Welcome to the **Image Processing** repository! This project was built to solve interesting problems and explore new technologies. Check out the source code to see how it was implemented.
 
-## Project Layout
+<br/>
 
-```text
-Seamless-Detection/
-	base/                  # shared framework, encoder backbones, loss factory
-	methods/cornet_compare/# method-specific config/model/loss/saver
-	dataset/               # put datasets here (see dataset/README.md)
-	train.py               # training entry point
-	test.py                # testing/inference entry point
-	eval.py                # metric evaluation from saved predictions
-	crf.py                 # CRF post-processing
-	deploy.py              # single-image/folder inference utility
-```
+## 🛠️ Built With
 
-## Environment
+*This project leverages modern tools and technologies to deliver a robust solution.*
 
-Recommended:
+<br/>
 
-- Python 3.8-3.10
-- CUDA-enabled PyTorch
+## 💻 Getting Started
 
-Install dependencies:
+To get a local copy up and running, follow these simple steps:
 
-```bash
-pip install -r requirements.txt
-```
+1. Clone the repo:
+   `sh
+   git clone https://github.com/TusharJiShukla/Image_Processing.git
+   `
+2. Navigate to the project directory:
+   `sh
+   cd Image_Processing
+   `
 
-## Dataset Preparation
+<br/>
 
-Default expected structure (relative to this repository):
+## 🤝 Contributing
 
-```text
-dataset/
-	MSB-TR/
-		images/
-		segmentations/
-		found/               # optional pseudo labels
-		found_crf/           # optional pseudo labels
-	ECSSD/
-		images/
-		segmentations/
-	DUTS-TE/
-		images/
-		segmentations/
-	DUT-OMRON/
-		images/
-		segmentations/
-```
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
 
-The code reads:
+<br/>
 
-- images from: dataset/<set_name>/images/\*.jpg
-- masks from: dataset/<set_name>/<tag>/\*.png
+## 👤 Author
 
-Where <tag> is selected by training/testing flags (segmentations, found, or found_crf).
+**Tushar Shukla**
+- GitHub: [@TusharJiShukla](https://github.com/TusharJiShukla)
+- LinkedIn: [Tushar Shukla](https://linkedin.com/in/tushar-shukla)
+- Email: tusharjishukla@gmail.com
 
-## Quick Start
-
-### 1) Train
-
-```bash
-python train.py cornet_compare \
-	--gpus=0 \
-	--save \
-	--found \
-	--vals=ECSSD
-```
-
-### 2) Test
-
-```bash
-python test.py cornet_compare \
-	--weight=./weight/cornet_compare/resnet/base/cornet_compare_base_24.pth \
-	--gpus=0 \
-	--save \
-	--vals=ECSSD,DUTS-TE,DUT-OMRON,PASCAL-S
-```
-
-### 3) Evaluate Saved Predictions
-
-```bash
-python eval.py --data_path=./dataset --pre_path=./result/cornet_compare/resnet/base --vals=ECSSD,DUTS-TE
-```
-
-### 4) Apply CRF Post-processing
-
-```bash
-python crf.py MSB-TR
-```
----
+<div align="center">
+  <sub>Made with ❤️ by Tushar Shukla</sub>
+</div>
