@@ -1,50 +1,41 @@
-﻿<div align="center">
-  <h1 align="center">Image Processing</h1>
-  <h3>Developed by Tushar Shukla</h3>
-</div>
-
-<br/>
-
-## 🚀 Overview
-
-Welcome to the **Image Processing** repository! This project was built to solve interesting problems and explore new technologies. Check out the source code to see how it was implemented.
-
-<br/>
-
-## 🛠️ Built With
-
-*This project leverages modern tools and technologies to deliver a robust solution.*
-
-<br/>
-
-## 💻 Getting Started
-
-To get a local copy up and running, follow these simple steps:
-
-1. Clone the repo:
-   `sh
-   git clone https://github.com/TusharJiShukla/Image_Processing.git
-   `
-2. Navigate to the project directory:
-   `sh
-   cd Image_Processing
-   `
-
-<br/>
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
-
-<br/>
-
-## 👤 Author
-
-**Tushar Shukla**
-- GitHub: [@TusharJiShukla](https://github.com/TusharJiShukla)
-- LinkedIn: [Tushar Shukla](https://linkedin.com/in/tushar-shukla)
-- Email: tusharjishukla@gmail.com
-
 <div align="center">
-  <sub>Made with ❤️ by Tushar Shukla</sub>
+  <h1>🖼️ Image Processing & Seamless Detection</h1>
+  <p><i>Advanced computer vision techniques for seamless image manipulation and object detection.</i></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  </p>
 </div>
+
+## 🌟 Overview
+Welcome to the **Image_Processing** repository! This project focuses on the intricacies of computer vision, specifically honing in on seamless cloning and detection algorithms. The primary workspace is housed within the `Seamless-Detection` directory.
+
+## ✨ Features
+- **Seamless Cloning**: Algorithms to blend images seamlessly into new backgrounds without visible seams.
+- **Feature Detection**: Identifying key points and regions of interest within images.
+- **Image Manipulation**: Various transformations and filtering techniques.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.x
+- OpenCV library
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Image_Processing.git
+   cd Image_Processing/Seamless-Detection
+   ```
+2. Install dependencies (if a requirements file is present):
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the primary detection script:
+   ```bash
+   python main.py
+   ```
+
+## 🧠 Methodology
+The project explores mathematical and algorithmic approaches to image gradients, Poisson image editing, and real-time detection optimizations.
